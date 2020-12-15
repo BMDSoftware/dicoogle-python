@@ -7,15 +7,8 @@ dicoogle-python - dicoogle API client for Python
 
 **dicoogle-python** is the official Python client for the dicoogle API.
 
-:copyright: (c) 2013, Luís A. Bastião Silva, Universidade de Aveiro
-:license: Creative Commons Attribution-Noncommercial
-
-
-Resources
-^^^^^^^^^
-
-* `Issue Tracker <http://github.com/bioinformatics-ua/dicoogle-python/issues>`_
-* `Code <http://github.com/bioinformatics-ua/dicoogle-python>`_
+:copyright: (c) 2020, Luís A. Bastião Silva, BMD Software
+:license: MIT
 
 '''
 
@@ -29,11 +22,11 @@ if sys.version_info < (2, 7):
                               'Python 3.x to use `dicoogle-python`.')
 
 setup(name='dicoogle',
-      version='0.1',
+      version='1.0',
       description='dicoogle API client for Python.',
       long_description=__doc__,
-      author='Luis Bastião',
-      author_email='bastiao@ua.pt',
+      author='Luis Bastião Silva',
+      author_email='bastiao@bmd-software.com',
       license='CC-BY-NC',
       install_requires=['requests>=1.2.0'],
       py_modules=['dicoogle'],

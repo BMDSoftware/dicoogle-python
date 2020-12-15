@@ -2,19 +2,20 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'dicoogle'
-__version__ = '2.0-dev'
-__author__ = 'Luís A. Bastião Silva, Tiago Marques Godinho'
+__version__ = '2.0'
+__author__ = 'Luís Bastião Silva'
+__original_authors__ = 'Luís A. Bastião Silva, Tiago Marques Godinho'
 __license__ = 'GPL v3'
-__copyright__ = 'Copyright 2013, Luís Bastião, Universidade de Aveiro'
-__url__ = 'http://bastiao.github.io/dicoogle-python/'
+__copyright__ = 'Copyright 2020, BMD software'
 
-__maintainer__ = 'Luís A. Bastião Silva, Tiago Marques Godinho'
-__email__ = 'bastiao@ua.pt, tmgodinho@ua.pt'
+__url__ = 'https://www.dicoogle.com'
+
+__maintainer__ = 'Luís Bastião Silva'
+__email__ = 'bastiao@bmd-software.com'
 
 __all__ = ()
 
 import requests
-
 
 class Dicoogle:
     def __init__(self, url='demo.dicoogle.com'):
@@ -22,7 +23,6 @@ class Dicoogle:
 
     # Validated
     def search_dim(self, query, provider=None, keyword=True):
-        #http://localhost:8080/searchDIM?query=Modality:CR&keyword=true
         url = self.ENDPOINT + "/searchDIM"
         data = {"query": query, "keyword": keyword}
         if provider:
